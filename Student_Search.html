@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Seek For a JOb </title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+<!--login modal-->
+  <div class="jumbotron home home-fullscreen" id="home">
+ 
+<div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h1 class="text-center">Job Filter</h1>
+      </div>
+      <div class="modal-body">
+          <form action="Student_Search.php"	method="post" class="form col-md-12 center-block">    <!--need to redirect .php-->
+            <div class="form-group">
+              <input type="text" class="form-control input-lg" placeholder="Title" name="title">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control input-lg" placeholder="Qualifications" name="qualification">
+            </div>
+             <div class="form-group">
+              <input type="text" class="form-control input-lg" placeholder="Job Type" name="jobtype">
+            </div>
+             <div class="form-group">
+              <input type="text" class="form-control input-lg" placeholder="Job Function" name="jobfunction">
+            </div>
+            <div class="form-group">
+              Salary: &nbsp;&nbsp;
+              > $10000 &nbsp;<input type="radio" name="salary" value=10000 checked="checked"> &nbsp;&nbsp;
+              $8000 - $10000 &nbsp;<input type="radio" name="salary" value=8000> &nbsp;&nbsp;
+              $5000 - $8000 &nbsp;<input type="radio"  name="salary" value=5000> &nbsp;&nbsp;
+              &lt; $5000 &nbsp;<input type="radio"  name="salary" value=1000> &nbsp;&nbsp;
+            </div>
+
+            <div class="form-group">
+              Date Posted: &nbsp;&nbsp;
+              Less than 7 days&nbsp;<input type="radio" name="date" value=7 checked="checked"> &nbsp;&nbsp;
+              7 - 14 days &nbsp;<input type="radio" name="date" value=14> &nbsp;&nbsp;
+              More than 14 days &nbsp;<input type="radio"  name="date" value=15> &nbsp;&nbsp;
+            </div>
+
+            <div class="form-group">
+              <input type="submit" name="login" class="btn btn-primary btn-lg btn-block" value="Search"/>
+						</div>
+          </form>
+      </div>
+
+      <div class="modal-footer">
+          <div class="col-md-12">
+						
+		  </div>
+      </div>
+  </div>
+  </div>
+</div>
+</div>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
